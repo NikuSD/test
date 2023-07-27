@@ -6,7 +6,7 @@
         "description": " This will be the 1st instance of DRU",
         "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png",
         "image": "lscr.io/linuxserver/phpmyadmin:latest",
-        "note": "This is a note",
+        "note": "This is a note 1",
         "categories": [
             "System Tools"
         ],
