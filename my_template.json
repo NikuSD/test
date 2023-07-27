@@ -4,7 +4,7 @@
         "title": "DRU1",
         "name": "DRU 1",
         "description": " This will be the 1st instance of DRU",
-        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Du_Solid_Brandmark_RGB.png",
         "image": "lscr.io/linuxserver/phpmyadmin:latest",
         "note": "This is a note 1",
         "categories": [
@@ -59,7 +59,7 @@
         "title": "DRU2",
         "name": "DRU 2",
         "description": " This will be the 2nd instance of DRU",
-        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Du_Solid_Brandmark_RGB.png",
         "image": "lscr.io/linuxserver/phpmyadmin:latest",
         "note": "This is a note 2",
         "categories": [
