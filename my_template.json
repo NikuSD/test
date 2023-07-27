@@ -1,0 +1,112 @@
+[
+    {
+        "type": 1,
+        "title": "DRU1",
+        "name": "DRU 1",
+        "description": " This will be the 1st instance of DRU",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png",
+        "image": "lscr.io/linuxserver/phpmyadmin:latest",
+        "note": "This is a note 1",
+        "categories": [
+            "System Tools"
+        ],
+        "platform": "linux",
+        "restart_policy": "unless-stopped",
+        "ports": [
+            "80:8306/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "!config/phpmyadmin/config"
+            }
+        ],
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "!PUID",
+                "description": "for UserID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "!PGID",
+                "description": "for GroupID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "!TZ",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "PMA_ARBITRARY",
+                "label": "PMA_ARBITRARY",
+                "default": "1",
+                "description": "Set to `1` to allow you to connect to any server. Setting to `0` will only allow you to connect to specified hosts (See Application Setup)"
+            },
+            {
+                "name": "PMA_ABSOLUTE_URI",
+                "label": "PMA_ABSOLUTE_URI",
+                "default": "https://phpmyadmin.yourdomain.tld",
+                "description": "Set the URL you will use to access the web frontend"
+            }
+        ]
+    },
+    {
+        "type": 1,
+        "title": "DRU2",
+        "name": "DRU 2",
+        "description": " This will be the 2nd instance of DRU",
+        "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/phpmyadmin-logo.png",
+        "image": "lscr.io/linuxserver/phpmyadmin:latest",
+        "note": "This is a note 2",
+        "categories": [
+            "System Tools"
+        ],
+        "platform": "linux",
+        "restart_policy": "unless-stopped",
+        "ports": [
+            "80:8306/tcp"
+        ],
+        "volumes": [
+            {
+                "container": "/config",
+                "bind": "!config/phpmyadmin/config"
+            }
+        ],
+        "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "!PUID",
+                "description": "for UserID"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "!PGID",
+                "description": "for GroupID"
+            },
+            {
+                "name": "TZ",
+                "label": "TZ",
+                "default": "!TZ",
+                "description": "Specify a timezone to use for example Europe/Amsterdam"
+            },
+            {
+                "name": "PMA_ARBITRARY",
+                "label": "PMA_ARBITRARY",
+                "default": "1",
+                "description": "Set to `1` to allow you to connect to any server. Setting to `0` will only allow you to connect to specified hosts (See Application Setup)"
+            },
+            {
+                "name": "PMA_ABSOLUTE_URI",
+                "label": "PMA_ABSOLUTE_URI",
+                "default": "https://phpmyadmin.yourdomain.tld",
+                "description": "Set the URL you will use to access the web frontend"
+            }
+        ]
+    }
+]
